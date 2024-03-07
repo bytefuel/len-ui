@@ -192,8 +192,7 @@ export const OfmCommunication = () => {
               type='text'
               placeholder='OfmId'
               value={formData.ofmId}
-              onChange={handleInputChange}
-            />
+              onChange={handleInputChange}/>
           </Grid>
 
           <Grid item xs={4}>

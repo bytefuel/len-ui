@@ -1,0 +1,86 @@
+
+.container{
+  margin: 15px 0px 10px 0px;
+  display: flex;
+}
+
+.section-cloner-button{
+  margin-left: 10px;
+  background-color: #4CAF50; /* Green background */
+  border: none; /* No border */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Make it inline */
+  font-size: 16px; /* Font size */
+  margin: 10px; /* Margin */
+  cursor: pointer; /* Cursor style */
+  border-radius: 5px; /* Rounded corners */
+
+}
+
+
+.section-cloner-button:hover {
+  background-color: #45a049;
+}
+
+   
+  .exem-3 {
+    position: relative;
+    width: 80vw;
+    color: black;
+    font-size: 20px;
+   
+    /* text-align: center; */
+  
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  
+      width:85%;
+      height: 1px;
+      background-color: black;
+    }
+  
+    &:before {
+      left: 0;
+    }
+  
+    &:after {
+      right: 0;
+    }
+  }
+  
+
+.exem-2{
+    position: relative;
+    width: 80vw;
+    color: black;
+    font-size: 20px;
+   
+    /* text-align: center; */
+  
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  
+      width:85%;
+      height: 0.5px;
+      background-color: black;
+    }
+  
+    &:before {
+      left: 0;
+    }
+  
+    &:after {
+      right: 0;
+    }
+  }

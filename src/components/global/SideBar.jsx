@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem, SubMenu  } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
@@ -11,6 +11,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import ImageIcon from '@mui/icons-material/Image';
 import hassan_usmani21 from "../../assets/hassan_usmani21.webp";
 import PersonIcon from '@mui/icons-material/Person';
+import DashboardIcon from '@mui/icons-material/Dashboard';
 
 
 const CustomSidebar = () => {
@@ -143,23 +144,27 @@ const CustomSidebar = () => {
             }}
           
             >
-              <Menu>
-                {/* Customer */}
-                <SubMenu label="Customer" icon={<PersonIcon />} styles={{ subMenu: subMenuItemStyle,}}
+          <Menu>
 
-                >
+        {/* Dashbord*/}
+
+        
+        <MenuItem 
+          icon={<DashboardIcon/>}
+          component={<Link to="/documentation" />}> 
+             <Link to="/SalesInquiry">Dashbord</Link>
+          </MenuItem>
+
+                {/* Customer */}
+                <SubMenu label="Customer" icon={<PersonIcon />} styles={{ subMenu: subMenuItemStyle,}}>
                   <MenuItem icon={<AddBoxIcon />}
                   onClick={() => setIsCollapsed(!isCollapsed)}>
                   <Link to="/form">New</Link>
                   </MenuItem>
-
-
                   <MenuItem icon={<EditIcon />}
                    onClick={() => setIsCollapsed(!isCollapsed)}>
                     <Link to="/Customer">Edit</Link>
                   </MenuItem>
-
-                  
                 </SubMenu>
 
                 {/* Sales Inquiry */}

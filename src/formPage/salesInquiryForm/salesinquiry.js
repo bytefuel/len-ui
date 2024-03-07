@@ -636,7 +636,7 @@ export const SalesInquiry = () => {
           
         }
       }>
-        <Button 
+    <Button 
         style={{
           padding:'8px 30px 8px 30px',
           // margin:"15px 0px 0px 10px",
@@ -646,7 +646,8 @@ export const SalesInquiry = () => {
         variant="contained" 
         color="primary">
         Submit
-        </Button>
+    </Button>
+
       </div>
         
       </form>
