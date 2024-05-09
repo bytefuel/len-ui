@@ -7,7 +7,7 @@ import moment from 'moment';
 import axios from 'axios';
 //import { useContext } from 'react'; 
 // import DataContext from '../../contextAPI/DataContext'
-import "C:/Admin Panel/adminpanel/src/Pages/customerPage/createCustomer/customerFrom.css";
+// import "C:/Admin Panel/adminpanel/src/Pages/customerPage/createCustomer/customerFrom.css";
 import { useNavigate, useParams } from 'react-router-dom';
 
 
